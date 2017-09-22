@@ -6,11 +6,11 @@ var canvas_name = "canvas";
 var synth_canvas = null;
 
 
-
 // test
 var test_piece1 = [{x:20,y:20}, {x:100,y:50}, {x:50,y:100},{x:0,y:90}];
 
 var synth_json1 = "";
+
 
 
 // manager and util for HTML5's Canvas
@@ -47,9 +47,7 @@ class Canvas{
   reset_screen(){
     var fill_style  = this.ctx.fillStyle;
     this.ctx.fillStyle = this.background_style;
-
     this.ctx.fillRect(0, 0, this.width, this.height);
-    
     this.ctx.fillStyle = fill_style;
   }
 
@@ -102,6 +100,10 @@ class Synth{
   constructor(synth){
     this.piece1 = "";
     this.piece2 = "";
+  }
+
+  draw_synth(){
+    
   }
 }
 
